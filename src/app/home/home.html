@@ -1,0 +1,55 @@
+<div class="container py-5">
+  <div class="row justify-content-center align-items-center min-vh-60">
+    <div class="col-lg-8 text-center">
+      <img src="https://ui-avatars.com/api/?name=Sivasankaran+K&background=0D8ABC&color=fff&size=128" alt="Sivasankaran K" class="rounded-circle mb-3 shadow" style="width: 128px; height: 128px;">
+      <h1 class="display-4 fw-bold mb-1">{{ name }}</h1>
+      <h2 class="h4 text-primary mb-2">{{ tagline }}</h2>
+      <div class="mb-3">
+        <span class="text-secondary">|
+          <span id="typewriter" class="fw-semibold"></span>
+        |</span>
+      </div>
+      <p class="lead mb-4">{{ summary }}</p>
+      <div class="d-flex justify-content-center gap-3 mb-4 flex-wrap">
+        <a href="mailto:sivasankarankrish@gmail.com" class="btn btn-primary px-4">Hire Me</a>
+        <a href="/assets/Sivasankaran_Resume.pdf" class="btn btn-outline-secondary px-4" download>View Resume</a>
+      </div>
+      <div class="d-flex justify-content-center gap-3 mb-2">
+        <a href="https://www.linkedin.com/in/siva-sankaran-264891217" target="_blank" class="btn btn-link fs-4" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/gnusankar" target="_blank" class="btn btn-link fs-4" title="GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://twitter.com/" target="_blank" class="btn btn-link fs-4" title="Twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://youtube.com/" target="_blank" class="btn btn-link fs-4" title="YouTube"><i class="bi bi-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Simple typewriter effect for animatedTitles
+  const titles = [
+    'Angular Specialist',
+    'UI/UX Enthusiast',
+    'Open Source Contributor',
+    'Tech Blogger',
+    'Problem Solver'
+  ];
+  let i = 0, j = 0, current = '', isDeleting = false;
+  const el = document.getElementById('typewriter');
+  function type() {
+    if (!el) return;
+    if (!isDeleting && j <= titles[i].length) {
+      current = titles[i].substring(0, j++);
+      el.textContent = current;
+      setTimeout(type, 80);
+    } else if (isDeleting && j >= 0) {
+      current = titles[i].substring(0, j--);
+      el.textContent = current;
+      setTimeout(type, 40);
+    } else {
+      isDeleting = !isDeleting;
+      if (!isDeleting) i = (i + 1) % titles.length;
+      setTimeout(type, 1000);
+    }
+  }
+  setTimeout(type, 500);
+</script>
