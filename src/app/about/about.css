@@ -1,9 +1,25 @@
-.lead {
-	font-size: 1.15rem;
+.about-card {
+	border-radius: 1.2rem;
+	min-height: 320px;
+	transition: transform 0.2s, box-shadow 0.2s;
 }
-h2.text-primary {
-	font-weight: 700;
+.about-card:hover {
+	transform: translateY(-6px) scale(1.03);
+	box-shadow: 0 8px 32px #0d8abc33;
 }
-ul {
-	margin-bottom: 0.5rem;
+.gradient-card-1 {
+	background: linear-gradient(135deg, #0D8ABC 60%, #6f42c1 100%);
+}
+.gradient-card-2 {
+	background: linear-gradient(135deg, #6f42c1 60%, #0D8ABC 100%);
+}
+.gradient-card-3 {
+	background: linear-gradient(135deg, #0D8ABC 0%, #20c997 100%);
+}
+.progress {
+	background: #fff3;
+	border-radius: 6px;
+}
+.progress-bar {
+	border-radius: 6px;
 }

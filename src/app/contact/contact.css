@@ -1,6 +1,20 @@
+.contact-card {
+	border-radius: 1.2rem;
+	min-height: 320px;
+	transition: transform 0.2s, box-shadow 0.2s;
+}
+.contact-card:hover {
+	transform: translateY(-6px) scale(1.03);
+	box-shadow: 0 8px 32px #0d8abc33;
+}
 .form-label {
 	font-weight: 500;
 }
-.btn-primary {
-	min-width: 120px;
+.send-btn {
+	transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+	box-shadow: 0 2px 8px #fff5;
+}
+.send-btn:hover {
+	background: #0D8ABC;
+	color: #fff;
 }

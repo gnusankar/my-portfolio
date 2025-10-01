@@ -1,39 +1,50 @@
 <div class="container py-5">
 	<h2 class="mb-4 text-primary">Contact Me</h2>
-	<div class="row">
-		<div class="col-md-7 mb-4 mb-md-0">
-			<form>
-				<div class="mb-3">
-					<label for="name" class="form-label">Name</label>
-					<input type="text" class="form-control" id="name" placeholder="Your Name" required>
+	<div class="row justify-content-center">
+		<div class="col-lg-8">
+			<div class="card contact-card shadow-lg border-0 gradient-card-1 text-white">
+				<div class="card-body p-4">
+					<form>
+						<div class="row g-3">
+							<div class="col-md-6">
+								<label for="name" class="form-label">Name</label>
+								<input type="text" class="form-control" id="name" placeholder="Your Name" required>
+							</div>
+							<div class="col-md-6">
+								<label for="email" class="form-label">Email</label>
+								<input type="email" class="form-control" id="email" placeholder="you@email.com" required>
+							</div>
+							<div class="col-12">
+								<label for="message" class="form-label">Message</label>
+								<textarea class="form-control" id="message" rows="4" placeholder="Type your message..." required></textarea>
+							</div>
+							<div class="col-12 d-flex justify-content-end">
+								<button type="submit" class="btn btn-light px-4 send-btn">
+									<span>Send Message</span>
+									<span class="ms-2"><i class="bi bi-send-fill"></i></span>
+								</button>
+							</div>
+						</div>
+					</form>
+					<hr class="my-4 bg-white opacity-50">
+					<div class="row text-center">
+						<div class="col-md-4 mb-2">
+							<i class="bi bi-envelope-fill fs-4"></i><br>
+							<a href="mailto:sivasankarankrish@gmail.com" class="text-white">sivasankarankrish@gmail.com</a>
+						</div>
+						<div class="col-md-4 mb-2">
+							<i class="bi bi-linkedin fs-4"></i><br>
+							<a href="https://www.linkedin.com/in/siva-sankaran-264891217" target="_blank" class="text-white">LinkedIn</a>
+						</div>
+						<div class="col-md-4 mb-2">
+							<i class="bi bi-github fs-4"></i><br>
+							<a href="https://github.com/gnusankar" target="_blank" class="text-white">GitHub</a>
+						</div>
+					</div>
+					<div class="text-center mt-3">
+						<i class="bi bi-geo-alt-fill"></i> Bangalore / Chennai, India
+					</div>
 				</div>
-				<div class="mb-3">
-					<label for="email" class="form-label">Email</label>
-					<input type="email" class="form-control" id="email" placeholder="you@email.com" required>
-				</div>
-				<div class="mb-3">
-					<label for="message" class="form-label">Message</label>
-					<textarea class="form-control" id="message" rows="4" placeholder="Type your message..." required></textarea>
-				</div>
-				<button type="submit" class="btn btn-primary px-4">Send Message</button>
-			</form>
-		</div>
-		<div class="col-md-5">
-			<div class="mb-3">
-				<h5>Email</h5>
-				<a href="mailto:sivasankarankrish@gmail.com">sivasankarankrish@gmail.com</a>
-			</div>
-			<div class="mb-3">
-				<h5>LinkedIn</h5>
-				<a href="https://www.linkedin.com/in/siva-sankaran-264891217" target="_blank">siva-sankaran-264891217</a>
-			</div>
-			<div class="mb-3">
-				<h5>GitHub</h5>
-				<a href="https://github.com/gnusankar" target="_blank">gnusankar</a>
-			</div>
-			<div class="mb-3">
-				<h5>Location</h5>
-				<span>Bangalore / Chennai, India</span>
 			</div>
 		</div>
 	</div>
